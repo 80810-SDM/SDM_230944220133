@@ -1,0 +1,688 @@
+    1  ls
+    2  neofetch --ascii_colors 6 7 -- colors 2 2 2 2
+    3  cd ~
+    4  ls
+    5  cd DAC
+    6  sudo apt-get install neofetch
+    7  neofetch --ascii_colors 6 7 --colors 2 2 2 2
+    8  ls
+    9  cd DAC
+   10  ls
+   11  mkdir GitTry
+   12  ls GitTry
+   13  cd GitTry
+   14  git init
+   15  ^[[200~git config --global init.defaultBranch <name>
+   16  git config --global init.defaultBranch main
+   17  sudo docker image ls
+   18  sudo docker image pull 172.18.1.51:5000/java
+   19  sudo docker image pull 172.18.1.51:5000/ubuntu
+   20  sudo docker image ls
+   21  ls
+   22  ls -a
+   23  ls -1
+   24  ls -1 -a
+   25  git branch -b dev1
+   26  git branch -m dev1
+   27  git branch
+   28  git branch ls
+   29  git log
+   30  git branch master
+   31  git branch -m master
+   32  git branch -a
+   33  cat file1.txt
+   34  cat > file1.txt
+   35  git commit -a -m "Master commit #1"
+   36  git commit -a -m "Master commit 1"
+   37  git commit -a -m 'Master commit 1'
+   38  git commit -a -m 'Master commits 1'
+   39  git add .
+   40  git commit -m "Master commit #1"
+   41  git branch
+   42  git branch dev1
+   43  git checkout dev1
+   44  cat file1.txt
+   45  cat >> file1.txt
+   46  cat file1.txt
+   47  git status -s
+   48  git a
+   49  git add .
+   50  git commit -m "Dev1 commit #1"
+   51  touch new1.txt
+   52  git commit -a -m 'Dev1 commits 2'
+   53  git checkout master
+   54  git status -
+   55  git status -s
+   56  git add new1.txt
+   57  git commit -a -m 'Master commit 2'
+   58  git checkout dev1
+   59  git checkout master
+   60  git merge dev1
+   61  git branch -a
+   62  git checkout master
+   63  git checkout dev1
+   64  git branch dev2
+   65  git checkout dev2
+   66  git branch -a
+   67  git pull
+   68  plugins=(... docker)
+   69  man plugins
+   70  restart
+   71  dcls
+   72  sudo dcls
+   73  sudo dc
+   74  sudo dcls
+   75  plugins
+   76  docker image ls
+   77  sudo docker image ls
+   78  docker image ls
+   79  sudo docker image ls
+   80  sudo docker container ls
+   81  sudo docker image ls -a
+   82  mysql
+   83  mysql -u root -p
+   84  mysql -uroot -p
+   85  mysql -u root -p
+   86  mysql -u root
+   87  sudo mysql -u D4_80810_Prajwal -psunbeam
+   88  sudo docker image pull 172.18.1.51:5000/ubuntu
+   89  ls
+   90  sudo docker image ls
+   91  sudo docker image pull 172.18.1.51:5000/ubuntu
+   92  sudo docker image pull 172.18.1.51:5000/mysql
+   93  sudo docker image pull mysql
+   94  sudo docker image ls
+   95  code .
+   96  sudo docker image build -t imageforWeb
+   97  cd bank_app
+   98  sudo docker image build -t imageforWeb
+   99  cd ..
+  100  sudo docker image build -t imageforWeb .
+  101  sudo docker image build -t imageforweb .
+  102  cd bank_app
+  103  sudo docker image build -t imageforweb .
+  104  sudo docker image build -t imageforweb ./DockerFile
+  105  sudo docker image build -t imageforweb DockerFile
+  106  cd ..
+  107  sudo docker image build -t imageforweb ./DockerFile
+  108  sudo docker image build -t imageforweb .
+  109  cd bank_app
+  110  sudo docker image build -t imageforweb .
+  111  sudo docker container run -itd --name website imageforweb
+  112  sudo docker container rm --force 1dca2a35cc
+  113  sudo docker container rm -f 1dca2a35cc
+  114  sudo docker container ls
+  115  sudo docker container rm -f website
+  116  sudo docker container l
+  117  sudo docker container ls
+  118  sudo docker container rm --force website
+  119  sudo docker container kill website
+  120  sudo aa-remove-unknown
+  121  sudo docker container kill website
+  122  sudo docker container run -itd --name website -p 9090:80 imageforweb
+  123  sudo docker container rm --force website
+  124  sudo docker container run -itd --name website -p 9090:80 imageforweb
+  125  sudo docker image rm imageforweb
+  126  sudo docker container rm --force website
+  127  sudo docker image rm imageforweb
+  128  ls
+  129  bash recrate.sh
+  130  code .
+  131  sudo code .
+  132  service snapd.apparmor start 
+  133  code .
+  134  systemctl enable --now apparmor.service\nsystemctl enable --now snapd.apparmor.service
+  135  code .
+  136  sudo apparmor_parser -r /etc/apparmor.d/*snap-confine*\nsudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap-confine*
+  137  code .
+  138  sudo systemctl start apparmor 
+  139  sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
+  140  code .
+  141  sudo mysql -u D4_80810_Prajwal -psunbeam \n
+  142  sudo docker container run -itd --name dbforpk -e MYSQL_ROOT_PASSWORD=root mysql
+  143  sudo docker exec -it db date
+  144  sudo docker exec -it dbforpk date
+  145  sudo docker exec -it dbforpk bash
+  146  sudo docker volume ls
+  147  sudo docker exec -it dbforpk bash\n
+  148  sudo docker volume ls
+  149  sudo docker volume create sqlv1
+  150  sudo docker volume ls
+  151  sudo docker container run -itd --name dbforpk -e MYSQL_ROOT_PASSWORD=root -v sqlv1:/var/lib/mysql mysql
+  152  sudo docker container run rm -f dbforpk
+  153  sudo docker container rm -f dbforpk
+  154  sudo docker container run -itd --name dbforpk -e MYSQL_ROOT_PASSWORD=root -v sqlv1:/var/lib/mysql mysql
+  155  sudo docker exec -it dbforpk bash\n
+  156  sudo docker container rm -f dbforpk
+  157  sudo docker container run -itd --name dbforpk -e MYSQL_ROOT_PASSWORD=root -v sqlv1:/var/lib/mysql mysql
+  158  sudo docker exec -it dbforpk bash\n
+  159  sudo docker container ls -a
+  160  sudo docker image ls -a
+  161  sudo docker node  ls -a
+  162  sudo docker node  ls
+  163  sudo docker swarm init
+  164  sudo docker service ls
+  165  sudo docker node  ls
+  166  sudo docker container ls -a
+  167  sudo docker service create --name pkService
+  168  sudo docker service create --name pkService httpd
+  169  sudo docker node  ls
+  170  sudo docker node rm u891g2nkh8flgxpa9xrs87pjb
+  171  sudo docker node rm u891g2nkh8flgxpa9xrs87pjb --force
+  172  sudo docker node  ls
+  173  sudo docker swarm join --token SWMTKN-1-31vppd1cjhoo2fdunn3aaxs38jwbaajzhu5n4ykqdqu4jn34vc-bqfdcke9cc5gmctgl4nv6xdrk 172.18.5.107:2377
+  174  sudo docker swarm leave --force
+  175  sudo docker swarm join --token SWMTKN-1-31vppd1cjhoo2fdunn3aaxs38jwbaajzhu5n4ykqdqu4jn34vc-bqfdcke9cc5gmctgl4nv6xdrk 172.18.5.107:2377
+  176  sudo docker node  ls
+  177  sudo docker swarm leave --force
+  178  sudo docker swarm init
+  179  sudo watch -n 1 docker container ls
+  180  sudo docker service ls
+  181  sudo docker service create --name newservice httpd
+  182  sudo docker service ls
+  183  sudo docker service rm newservice
+  184  sudo docker service ls
+  185  sudo docker image ls -a
+  186  sudo docker service create --name s1 -p 9090:80 imageforweb
+  187  sudo docker service scale s1=10
+  188  sudo docker service scale s1=1
+  189  sudo docker service scale s1=0
+  190  sudo docker ps
+  191  sudo docker stat
+  192  sudo docker stats
+  193  sudo docker image history
+  194  sudo docker image history .
+  195  sudo docker image history *
+  196  sudo docker node ls
+  197  sudo docker node promote 
+  198  sudo docker node promote dsvv4lqmcastrhmivjfkd5u8j
+  199  ps -a
+  200  ps -u
+  201  ps -f
+  202  ps -ef
+  203  ps -f
+  204  curl -LO
+  205  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  206  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+  207  minikube start
+  208  sudo nano ~/.bashrc
+  209  docker container exec -it minikube bash
+  210  sudo docker container exec -it minikube bash
+  211  sudo docker image pull minikube
+  212  minikube start
+  213  sudo minikube start
+  214  sudo minikube start --force
+  215  kubectl get po -a
+  216  kubectl get po -A
+  217  minikube start
+  218  minikube kubectl -- get pods -A
+  219  minikube start
+  220  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  221  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+  222  minikube start
+  223  minikube config set driver docker
+  224  minikube delete
+  225  minikube start
+  226  sudo usermod -aG docker $USER && newgrp docker
+  227  minikube start
+  228  kubectl get po -A
+  229  sudo vim ~/.bashrc
+  230  minikube status # to verify
+  231  docker container exec -it minikube bash
+  232  docker image pull nginx
+  233  minikube status # to verify
+  234  minikube status
+  235  minikube start
+  236  systemctl enable kubelet.service~
+  237  systemctl enable kubelet.service
+  238  systemctl enable kubelet
+  239  sudo minikube start --force
+  240  sudo minikube start
+  241  sudo usermod -aG docker $USER && newgrp docker
+  242  sudo minikube start
+  243  minikube config set driver docker
+  244  sudo minikube start
+  245  sudo usermod -aG docker $USER && newgrp docker
+  246  sudo minikube start
+  247  sudo usermod -aG docker $USER && newgrp docker
+  248  clear
+  249  minikube start
+  250  sudo minikube start
+  251  minikube start
+  252  minikube status
+  253  minikube start
+  254  docker system prune
+  255  minikube start
+  256  kubeadm config images pull
+  257  sudo kubeadm config images pull
+  258  minikube start
+  259  minikube start --v=5
+  260  minikube kubectl -- get po -A
+  261  minikube status # to verify
+  262  minikube update-context
+  263  sudo minikube update-context
+  264  minikube start
+  265  sudo apt update docker
+  266  sudo apt update 
+  267  sudo usermod -aG docker $USER && newgrp docker
+  268  minikube start
+  269  docker context update --default-stack-orchestrator=swarm --default-stack-orchestrator=kubernetes --docker "{ \"storage-opts\": [\"size=40GB\"], \"storage-driver\": \"overlay2\" }" default
+  270  minikube start
+  271  minikube start --force
+  272  minikube start
+  273  sudo docker image ls
+  274  sudo usermod -aG docker $USER && newgrp docker
+  275  minikube start
+  276  sudo usermod -aG docker $USER && newgrp docker
+  277  minikube status
+  278  minikube start
+  279  minikube status
+  280  sudo usermod -aG docker $USER && newgrp docker
+  281  sudo minikube start
+  282  minikube start
+  283  sudo minikube delete
+  284  minikube start
+  285  minikube status
+  286  minikube dashboard
+  287  minikube addons enable metrics-server
+  288  minikube dashboard
+  289  minikube dashboard --url
+  290  minikube status
+  291  kubeclt get pods
+  292  minikube ssh
+  293  sudo docker container exec -it minikube bash
+  294  sudo apt get install -y kubectl
+  295  sudo apt-get install -y kubectl
+  296  sudo apt-get install  kubectl
+  297  sudo docker container exec -it minikube bash
+  298  minikube kubectl -- get po -A
+  299  kubeclt get pods
+  300  kubectl get pods
+  301  kubectl get poda -a
+  302  kubectl get poda -A
+  303  kubectl get pod -A
+  304  kubectl get pod
+  305  kubectl get pod -A
+  306  kubectl get 
+  307  kubectl get -h
+  308  kubectl options
+  309  git pull 
+  310  code .
+  311  kubectl get pods
+  312  kubectl create -f p1.yaml
+  313  kubectl get pods
+  314  kubectl describe pod p1
+  315  minikube ssh
+  316  kubectl get node
+  317  minikube ssh
+  318  code .
+  319  sudo docker container ls
+  320  sudo docker container ls -
+  321  sudo docker container ls -a
+  322  sudo docker container ls -A
+  323  sudo docker container ls -a
+  324  minikube ssh
+  325  sudo docker container ls -a
+  326  kubectl get pods
+  327  minikube service myservice
+  328  minikube start
+  329  minikube service myservice
+  330  minikube service service1.yaml
+  331  kubectl create -f service1.yaml
+  332  kubectl create -f pod3.yaml
+  333  kubectl get pod
+  334  minikube service service1.yaml
+  335  minikube get service 
+  336  kubectl get service 
+  337  minikube service list
+  338  code .
+  339  sudo docker image ls
+  340  sudo docker image rm ima
+  341  sudo docker image rm imageforweb
+  342  sudo docker image build -t autoServ . 
+  343  sudo docker image build -t autserv . 
+  344  minikube service list
+  345  kubectl get service 
+  346  kubectl get pod
+  347  kubectl delete pod pod4
+  348  kubectl delete pod pod3
+  349  kubectl create -f pod3.yaml
+  350  kubectl delete service myservice
+  351  bash b1.sh
+  352  minikube service list
+  353  bash b1.sh
+  354  minikube service list
+  355  bash b1.sh
+  356  minikube service list
+  357  minikube ssh
+  358  http://192.168.49.2:30144/
+  359  minikube ssh
+  360  bash b1.sh
+  361  minikube service list
+  362  minikube service list\n
+  363  bash b1.sh
+  364  minikube service list\n
+  365  bash b1.sh
+  366  minikube service list\n
+  367  bash b1.sh
+  368  minikube service list\n
+  369  ls
+  370  cat ./index.html
+  371  bash b1.sh
+  372  minikube service list\n
+  373  sudo mysql -u D4_80810_Prajwal -psunbeam
+  374  bash b1.sh
+  375  minikube service list\n
+  376  bash b1.sh
+  377  code .
+  378  bash b1.sh
+  379  uname
+  380  who am i
+  381  whoami
+  382  who
+  383  tty
+  384  w
+  385  q
+  386  w
+  387  e
+  388  r
+  389  e
+  390  t
+  391  y
+  392  u
+  393  i
+  394  o
+  395  p
+  396  a
+  397  s
+  398  d
+  399  f
+  400  g
+  401  h
+  402  j
+  403  k
+  404  l
+  405  z
+  406  x
+  407  c
+  408  v
+  409  b
+  410  n
+  411  m
+  412  sudo docker container ls -a
+  413  pid
+  414  ppid
+  415  ps
+  416  ps -e
+  417  ps -r
+  418  ps u
+  419  ps -u
+  420  man ps
+  421  ls
+  422  wc b1.sh
+  423  wc -heal
+  424  wc --help
+  425  cat b1.sh
+  426  docker ps -a --filter "name=minikube"
+  427  docker images autserv:latest
+  428  wc b1.sh
+  429  zsh b2.sh
+  430  bash b2.sh
+  431  find -name "b1"
+  432  find -name "b1.sh"
+  433  grep "is" b1.sh
+  434  grep "n1" b1.sh
+  435  grep "i" b1.sh
+  436  printf “Bash is a great shell.\n”
+  437  bash b2.sh
+  438  printf “%s\n” “This is executed” ; printf “%s\n” “And so is this”
+  439  bash b2.sh
+  440  date
+  441  printf “%f\n” 5
+  442  help -s printf
+  443  -help -s printf
+  444  man printf 
+  445  bash b2.sh
+  446  sync
+  447  man sync
+  448  shopt -s -o nounset
+  449  bash b2.sh
+  450  #!/bin/bash\n\necho -n "Enter two numbers : "\nread num1 num2\n\n# command substitutio\n\t# substitute result of command in place of it\n\n# sum=`expr $num1 + $num2`\nsum=$(expr $num1 + $num2)\n\necho "sum = $sum"
+  451  bash b2.sh
+  452  bash b3.sh
+  453  ssh bandit.labs.overthewire.org
+  454  ssh bandit0@bandit.labs.overthewire.org -p 2220
+  455  bash b4.sh
+  456  ls -a
+  457  bash b4.sh
+  458  wc words.txt
+  459  bash b5.sh
+  460  bash sagar.sh
+  461  sudo docker container ls -a
+  462  sudo docker image -ls
+  463  sudo docker image -a
+  464  sudo docker image ls
+  465  sudo docker container run -itd --name pkd -p 8080:80 httpd
+  466  sudo docker stats
+  467  sudo docker .
+  468  sudo docker --help
+  469  code .
+  470  uname
+  471  omi
+  472  whoami
+  473  who
+  474  w
+  475  sudo docker image build -t img .
+  476  sudo docker container run -itd --name pk1 -p 821:80 img
+  477  sudo docker swarm init
+  478  sudo docker swarm status
+  479  sudo docker swarm --help
+  480  sudo docker service create --name s1 -p 9091:80 img
+  481  sudo docker service create --name s2 -p 9091:80 img
+  482  sudo docker node ls
+  483  sudo docker service ls
+  484  sudo docker service --help
+  485  sudo docker service inspect s2
+  486  sudo docker service log s2
+  487  sudo docker service scale s2=5
+  488  sudo docker service scale ls
+  489  sudo docker container ls
+  490  sudo docker container run -itd --name pk2 -p 9091:80 img
+  491  sudo docker container run -itd --name pk2 -p 9090:80 img
+  492  sudo docker container run -itd --name pk2 -p 9190:80 img
+  493  sudo docker container run -itd --name pk3 -p 9190:80 img
+  494  sudo docker service rm s2
+  495  bash b1.sh
+  496  w
+  497  tty
+  498  tty -n
+  499  tty ---help
+  500  man tty
+  501  bash b2.sh
+  502  rev "reee"
+  503  rev l
+  504  bash b2.sh
+  505  rev "reee"
+  506  bash b2.sh
+  507  echo "ls" | rev 
+  508  bash b3.sh
+  509  ls -i
+  510  man ls
+  511  bash b3.sh
+  512  bash b5.sh
+  513  grep "is" data.txt
+  514  grep "is" data.txt || wc -w
+  515  grep "is" data.txt | wc -w
+  516  grep "is" data.txt -w
+  517  grep -l "is" data.txt 
+  518  grep -n "is" data.txt 
+  519  grep "is" data.txt 
+  520  grep "[is]" data.txt
+  521  grep -w "is" data.txt
+  522  grep -c "is" data.txt
+  523  man grep
+  524  grep -c "is" data.txt
+  525  grep "is" data.txt || wc
+  526  grep "is" data.txt || wc 
+  527  grep "is" data.txt | wc 
+  528  man grep
+  529  grep -o "is" data.txt | wc 
+  530  grep -o "is" data.txt
+  531  grep "is" data.txt
+  532  grep -o "is" data.txt | wc -w
+  533  grep -o "is" data.txt | wc -l
+  534  grep -o "is" data.txt | wc -c
+  535  sudo docker service rm s2
+  536  sudo docker service ls
+  537  sudo docker service rm s1
+  538  sudo docker image ls
+  539  sudo docker container ls
+  540  sudo docker container ls -a
+  541  grep "a" h.txt
+  542  grep "a" h.txt | rev
+  543  grep "a" h.txt | rev -l
+  544  man rev
+  545  grep "[a][A]" h.txt
+  546  grep "[aA]" h.txt
+  547  man ca
+  548  man cat
+  549  grep "[aA]" h.txt | tac
+  550  sudo docker container run -itd --name pk4 -p 98760:80 img
+  551  sudo docker container run -itd --name pk4 -p 9876:80 img
+  552  ls
+  553  touch COSSDM.txt
+  554  code .
+  555  cd ~ | ls -s
+  556  ls  ~
+  557  ls -s  ~
+  558  ls -s  ~ | sprt
+  559  ls -s  ~ | sort
+  560  man ls
+  561  ls -s  ~
+  562  ls -s -1 ~
+  563  ls -s  ~
+  564  man ls
+  565  ls -S  ~
+  566  ls  ~
+  567  ls -d ~
+  568  man ls
+  569  ls -S -s ~
+  570  ls -S -s -1 ~
+  571  ls -S -s -1 ~ | wc
+  572  man wc
+  573  ls -S -s -1 ~ | wc 
+  574  ls --help
+  575  ls -S -s -1 -l ~ | wc 
+  576  ls -S -s -1 -l ~
+  577  grep "files" info.txt 
+  578  man grep
+  579  grep --help
+  580  grep -v "files" info.txt 
+  581  cat -c info.txt
+  582  cat --help
+  583  cat -n info.txt
+  584  grep "have" info.txt
+  585  echo "grep \"have\" info.txt"
+  586  echo grep \"have\" info.txt
+  587  echo grep "have" info.txt
+  588  grep --help
+  589  grep -x "*g" info.txt
+  590  grep -x "g" info.txt
+  591  grep "*g" info.txt
+  592  grep "g" info.txt
+  593  ls
+  594  cd ~ 
+  595  ls
+  596  cd D
+  597  cd Desktop
+  598  cd x
+  599  ls
+  600  cat classwork_history (1).txt
+  601  cat classwork_history.txt
+  602  grep "^g" info.txt
+  603  grep "g" info.txt
+  604  grep "^g" info.txt
+  605  grep -x "^g" info.txt
+  606  grep -x "g" info.txt
+  607  grep "g" info.txt
+  608  grep "*g" info.txt
+  609  grep "e*g" info.txt
+  610  grep "[]*g" info.txt
+  611  grep "g" info.txt
+  612  grep -e 'g$' filename.txt
+  613  grep -e 'g$' info.txt
+  614  grep -e '$g' info.txt
+  615  grep -e '$f' info.txt
+  616  grep -e 'f' info.txt
+  617  grep -e 'f*' info.txt
+  618  grep -x 'f*' info.txt
+  619  grep -l 'f*' info.txt
+  620  grep -e 'f*' info.txt
+  621  grep -i '^f' info.txt
+  622  grep -i 'f' info.txt
+  623  ls 
+  624  cd app1
+  625  ls
+  626  cat Docl
+  627  ls
+  628  cat Dockerfile
+  629  sudo docker image ls
+  630  sudo docker image build -t resumeimg .
+  631  sudo docker image ls
+  632  sudo docker service ls
+  633  sudo docker service create --name serrsm -p 9091:80 resumeimg 
+  634  sudo docker container ls -a
+  635  sudo docker service scale serres=5
+  636  sudo docker service ls
+  637  sudo docker service serrsm=5
+  638  sudo docker service scale serrsm=5
+  639  sudo docker container ls -a
+  640  sudo docker service  --help
+  641  sudo docker service  update serrsm -p 9845:80
+  642  sudo docker service  update --help
+  643  sudo docker service rm serrsm
+  644  sudo docker service ls
+  645  sudo docker container ls -a
+  646  docker ps -a --filter "name=serrsm.4.s7wi0xomixbsvjp6c5w1takwc"
+  647  Bdocker rm serrsm.4.s7wi0xomixbsvjp6c5w1takwc
+  648  docker ps -a --filter "name=serrsm.4.s7wi0xomixbsvjp6c5w1takwc"
+  649  docker ps -a --filter "name=serrsm.2.qz7jc8wlrryp5x6z6fhbs1m25"
+  650  docker rm serrsm.2.qz7jc8wlrryp5x6z6fhbs1m25
+  651  sudo docker container rm -f img
+  652  sudo docker container rm -f cccc
+  653  sudo docker service create --name srs -p 9845:80 resumeimg 
+  654  sudo docker service scale srs=5
+  655  echo "# SDM_230944220133" >> README.md
+  656  git init\n
+  657  git add README.md
+  658  git branch -M main
+  659  cat file1.txt
+  660  cat >  file1.txt
+  661  cat >  file2.txt
+  662  git branch  branch1 
+  663  git branch
+  664  git checkout brach1
+  665  git checkout branch1
+  666  git add file1.txt
+  667  git commit -m 'branch1 commit file1.txt'
+  668  git checkout main
+  669  git branch  branch2
+  670  git checkout branch2
+  671  git add file2.txt
+  672  git commit -m 'branch2 commit file2.txt'
+  673  git log
+  674  git checkout main
+  675  git log
+  676  git log -a
+  677  git log help
+  678  git log -
+  679* cat commands.MD
+  680* cat commands.md
+  681  git log --oneline --color --graph
+  682  git merge branch1
+  683  git merge branch2
+  684  git log --oneline --color --graph
+  685  git branch -d branch1
+  686  git log --oneline --color --graph
+  687  git branch -d branch2
+  688  history
